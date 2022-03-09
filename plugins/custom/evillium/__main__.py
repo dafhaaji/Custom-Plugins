@@ -154,10 +154,8 @@ async def y_(message):
     'usage': "{tr}ii [input | reply to msg]"})
 async def ii_(message):
 
-    """ iiiii """
     input_str = message.input_or_reply_str
     if not input_str:
-
         await message.err("`no text given!  `" + choice(HILIH))
 
         return
