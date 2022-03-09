@@ -1,7 +1,12 @@
 
-# Custom-Plugins From ProjectDark & ​​GeezProject For USERGE
+# Custom-Plugins USERGE 
+# https://github.com/UsergeTeam/Userge
 
-# Thanks for ProjectDark & GeezProject
+# Credit~~
+# https://github.com/Ajibcdefgh/ProjectDark (ProjectDark)
+# https://github.com/vckyou/Geez-UserBot (GeezProject) 
+# https://github.com/apisuserbot/King-Userbot (King-Userbot)
+
 # t.me/dafhaaji
 
 import asyncio
@@ -10,8 +15,124 @@ from re import sub
 from random import choice
 from userge import userge
 
-@userge.on_cmd("huh$", about={'header': "Huhhhhhh"})
+#>>>>>>>>>>>>>>>>
+
+@userge.on_cmd("hand$", about={'header': "Hand Emoticon..."})
+async def hand_(message):
+    """hand animation"""
+    animation_chars = [
+        "👈",
+        "👉",
+        "☝️",
+        "👆",
+        "🖕",
+        "👇",
+        "✌️",
+        "🤞",
+        "🖖",
+        "🤘",
+        "🤙",
+        "🖐️",
+        "👌",
+    ]
+    animation_interval = 1
+    animation_ttl = range(13)
+
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await message.edit(animation_chars[i % 13])
+
+#>>>>>>>>>>>>>>>>
+
+@userge.on_cmd("semangat$", about={'header': "Semangat..."})
+async def punten_(message):
+    """semangat"""
+    await message.edit("`Apapun Yang Terjadi`")
+    await asyncio.sleep(3)
+    await message.edit("`Tetaplah Bernapas`")
+    await asyncio.sleep(1)
+    await message.edit("`Dan Selalu Bersyukur`")
+    await asyncio.sleep(1)
+    await message.edit("`Hahaha`")
+
+#>>>>>>>>>>>>>>>>
+
+@userge.on_cmd("foff$", about={'header': "ffof..."})
+async def foff_(message):
+    """fuck animation"""
+    await message.edit(".                       /¯ )")
+    await message.edit(".                       /¯ )\n                      /¯  /")
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /"
+    )
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸"
+    )
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ "
+    )
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')"
+    )
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /"
+    )
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´"
+    )
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              ("
+    )
+    await message.edit(
+        ".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  "
+    )
+
+#>>>>>>>>>>>>>>>>
+
+@userge.on_cmd("awk$", about={'header': "Awkwokwokwok..."})
+async def awk_(message):
+    """awkwokwo"""
+    await message.edit(
+        "────██──────▀▀▀██\n"
+        "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
+        "▄▀──█▄▄──────█─█▄▄\n"
+        "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
+        "─▀───────▀▀─▀───────▀▀\n`Awkwokwokwok..`"
+    )
+
+#>>>>>>>>>>>>>>>>
+
+@userge.on_cmd("punten$", about={'header': "Punten..."})
+async def punten_(message):
+    """punten"""
+    await message.edit("`\n┻┳|―-∩`"
+                     "`\n┳┻|     ヽ`"
+                     "`\n┻┳|    ● |`"
+                     "`\n┳┻|▼) _ノ`"
+                     "`\n┻┳|￣  )`"
+                     "`\n┳ﾐ(￣ ／`"
+                     "`\n┻┳T￣|`"
+                     "\n**Punten**")
+
+#>>>>>>>>>>>>>>>>
+
+@userge.on_cmd("hoa$", about={'header': "Hoaaa..."})
+async def hoa_(message):
+    """hoaa"""
+    await message.edit(
+            "`\n█████████`"
+            "`\n█▄█████▄█`"
+            "`\n█▼▼▼▼▼`"
+            "`\n█       Hoaaaa....`"
+            "`\n█▲▲▲▲▲`"
+            "`\n█████████`"
+            "`\n ██   ██`")
+
+#>>>>>>>>>>>>>>>>
+
+@userge.on_cmd("huh$", about={'header': "Huhhh.."})
 async def huh_(message):
+    """this for u"""
     await message.edit("\n(\\_/)"
                      "\n(●_●)"
                      "\n />❤️ *Ini Buat Kamu")
@@ -27,22 +148,24 @@ async def huh_(message):
 #>>>>>>>>>>>>>>>>
 
 @userge.on_cmd("gas$", about={'header': "Ninuninu...."})
-async def gas_(e):
-        await e.edit("___________________🚑")
-        await e.edit("________________🚑___")
-        await e.edit("______________🚑_____")
-        await e.edit("___________🚑________")
-        await e.edit("________🚑___________")
-        await e.edit("_____🚑______________")
-        await e.edit("__🚑_________________")
-        await e.edit("🚑___________________")
-        await e.edit("_____________________")
-        await e.edit(choice(HILIH))
+async def gas_(message):
+    """ambulance"""
+    await message.edit("___________________🚑")
+    await message.edit("________________🚑___")
+    await message.edit("______________🚑_____")
+    await message.edit("___________🚑________")
+    await message.edit("________🚑___________")
+    await message.edit("_____🚑______________")
+    await message.edit("__🚑_________________")
+    await message.edit("🚑___________________")
+    await message.edit("_____________________")
+    await message.edit(choice(HILIH))
 
 #>>>>>>>>>>>>>>>>
 
 @userge.on_cmd("anjay$", about={'header': "Anjay...."})
 async def anjay_(message):
+    """anjay"""
     await message.edit("""
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠉⠉⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿
@@ -78,6 +201,7 @@ async def anjay_(message):
 
 @userge.on_cmd("kntl$", about={'header': "Kntl luu...."})
 async def kntl_(message):
+    """tydack ramah"""
     await message.edit("""
 ⣠⡶⠚⠛⠲⢄⡀
 ⣼⠁ ⠀⠀⠀ ⠳⢤⣄
@@ -98,28 +222,29 @@ async def kntl_(message):
 #>>>>>>>>>>>>>>>>
 
 @userge.on_cmd("koc$", about={'header': "Ngocok dulu ngab..."})
-async def koc(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("8✊===D")
-        await e.edit("8=✊==D")
-        await e.edit("8==✊=D")
-        await e.edit("8===✊D")
-        await e.edit("8==✊=D")
-        await e.edit("8=✊==D")
-        await e.edit("8✊===D")
-        await e.edit("8=✊==D")
-        await e.edit("8==✊==D")
-        await e.edit("8===✊D💦")
-        await e.edit("8==✊=D💦💦")
-        await e.edit("8=✊==D💦💦💦")
-        await e.edit("8✊===D💦💦💦💦")
-        await e.edit("8===✊D💦💦💦💦💦")
-        await e.edit("┐(´д｀)┌")
+async def koc(message):
+    """colay animation"""
+    await message.edit("8✊===D")
+    await message.edit("8=✊==D")
+    await message.edit("8==✊=D")
+    await message.edit("8===✊D")
+    await message.edit("8==✊=D")
+    await message.edit("8=✊==D")
+    await message.edit("8✊===D")
+    await message.edit("8=✊==D")
+    await message.edit("8==✊==D")
+    await message.edit("8===✊D💦")
+    await message.edit("8==✊=D💦💦")
+    await message.edit("8=✊==D💦💦💦")
+    await message.edit("8✊===D💦💦💦💦")
+    await message.edit("8===✊D💦💦💦💦💦")
+    await message.edit("┐(´д｀)┌")
 
 #>>>>>>>>>>>>>>>>
 
 @userge.on_cmd("babi$", about={'header': "Babi luu...."})
 async def babi_(message):
+    """pig ngok"""
     await message.edit("┈┈┏━╮╭━┓┈╭━━━━╮\n"
                      "┈┈┃┏┗┛┓┃╭┫Ngok ┃\n"
                      "┈┈╰┓▋▋┏╯╯╰━━━━╯\n"
@@ -131,8 +256,9 @@ async def babi_(message):
 
 #>>>>>>>>>>>>>>>>
 
-@userge.on_cmd("y$", about={'header': "Dinoooooo...."})
+@userge.on_cmd("y$", about={'header': "👍"})
 async def y_(message):
+    """thumb"""
     await message.edit("‡‡‡‡‡‡‡‡‡‡‡‡▄▄▄▄\n"
                      "‡‡‡‡‡‡‡‡‡‡‡█‡‡‡‡█\n"
                      "‡‡‡‡‡‡‡‡‡‡‡█‡‡‡‡█\n"
@@ -149,17 +275,15 @@ async def y_(message):
 
 #>>>>>>>>>>>>>>>>
 
-@userge.on_cmd("ii$", about={
+@userge.on_cmd("ii", about={
     'header': "HILIH KINTIL >.<",
     'usage': "{tr}ii [input | reply to msg]"})
 async def ii_(message):
-
+    """aeiou to i"""
     input_str = message.input_or_reply_str
     if not input_str:
-        await message.err("`no text given!  `" + choice(HILIH))
-
+        await message.edit("` Hilih no text given! `")
         return
-    reply_text = []
     reply_text = sub(r"([aeiou])", "i", input_str)
     reply_text = sub(r"([AEIOU])", "I", reply_text)
     reply_text += " " + choice(HILIH)
